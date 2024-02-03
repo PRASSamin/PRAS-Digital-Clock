@@ -1,0 +1,198 @@
+
+.gif-container {
+    background-color: #7b4bbd;
+    width: 140px;
+    height: 140px;
+    transform: rotate(45deg);
+    margin-top: -75px;
+    margin-left: -75px;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 49px 3px rgba(0, 0, 0, 0.88);
+    -webkit-box-shadow: 10px 10px 49px 3px rgba(0, 0, 0, 0.88);
+    -moz-box-shadow: 10px 10px 49px 3px rgba(0, 0, 0, 0.88);
+  }
+  
+  
+  
+  .gif-container img {
+    margin-top: 0px;
+    margin-left: 90px;
+    width: 40px;
+    transform: rotate(-45deg);
+  }
+
+
+html {
+    height: 100%;
+
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    height: 100%;
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    background: linear-gradient(180deg, rgba(1, 3, 20, 1) 0%, rgba(89, 45, 209, 1) 100%) no-repeat;
+    /* background: linear-gradient(180deg, rgba(1,3,20,1) 0%, rgba(89,45,209,1) 50%, rgba(255,255,255,1) 100%);} */
+}
+
+@font-face {
+    font-family: NHG;
+    src: url(/fonts/nhg_text_65md.ttf);
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+}
+
+.countdown-item {
+    font-size: 2em;
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+.event-description {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #555;
+}
+
+.c-item {
+    width: 100%;
+    font-size: 70px;
+    font-family: 'NHG', sans-serif;
+    color: white;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+.c-item-date {
+    width: 100%;
+    font-size: 18px;
+    font-family: 'NHG', sans-serif;
+    color: white;
+    top: 72%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.clock {
+    width: 500px;
+    height: 200px;
+    background: #dddddd24;
+    padding: 20px 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    user-select: none;
+    left: 50%;
+    top: 50%;
+    position: relative;
+    transform: translate(-50%, -50%);
+}
+
+#format img {
+    width: 40px;
+    height: auto;
+}
+
+.clock select {
+    width: 100px;
+    height: 30px;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    overflow: hidden !important;
+}
+
+.select {
+    display: flex;
+
+}
+
+.select h5 {
+    margin: 0px 10px;
+    transition: 0.2S ease-in-out;
+    padding: 5px 8px;
+    color: #fff;
+}
+
+.select h5:hover,
+.select h5:focus,
+.select h5.active {
+    cursor: pointer;
+    color: #000000;
+    background: #ffffff86;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .clock {
+        width: 80%;
+        left: 50%;
+        position: relative;
+        transform: translate(-50%, -50%);
+        user-select: none;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .clock {
+        width: 60%;
+        height: 300px;
+        left: 50%;
+        position: relative;
+        transform: translate(-50%, -50%);
+        user-select: none;
+    }
+}
+
+#toggleNotificationBtn {
+    background: transparent;
+    border: none;
+    outline: none;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+}
+
+#toggleNotificationBtn .fa-bell {
+    color: rgb(89, 89, 89);
+    font-size: 35px;
+    animation: bell 2s infinite;
+    transition: 0.4s ease-in-out;
+    /* cursor: pointer; */
+
+}
+
+#toggleNotificationBtn .fa-bell:hover {
+    color: rgb(169, 62, 62);
+}
+
+
+@keyframes bell {
+
+    100%,
+    0% {
+        transform: rotate(45deg);
+    }
+
+    50% {
+        transform: rotate(-45deg);
+    }
+}
