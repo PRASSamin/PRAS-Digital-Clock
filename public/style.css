@@ -1,198 +1,261 @@
-
 .gif-container {
-    background-color: #7b4bbd;
-    width: 140px;
-    height: 140px;
-    transform: rotate(45deg);
-    margin-top: -75px;
-    margin-left: -75px;
-    position: fixed;
-    z-index: 1000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 10px 10px 49px 3px rgba(0, 0, 0, 0.88);
-    -webkit-box-shadow: 10px 10px 49px 3px rgba(0, 0, 0, 0.88);
-    -moz-box-shadow: 10px 10px 49px 3px rgba(0, 0, 0, 0.88);
-  }
-  
-  
-  
-  .gif-container img {
-    margin-top: 0px;
-    margin-left: 90px;
-    width: 40px;
-    transform: rotate(-45deg);
-  }
+  background-color: #7b4bbd;
+  width: 140px;
+  height: 140px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-top: -75px;
+  margin-left: -75px;
+  position: fixed;
+  z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-shadow: 10px 10px 49px 3px rgba(0, 0, 0, 0.88);
+  -webkit-box-shadow: 10px 10px 49px 3px rgba(0, 0, 0, 0.88);
+  -moz-box-shadow: 10px 10px 49px 3px rgba(0, 0, 0, 0.88);
+}
 
+.gif-container img {
+  margin-top: 0px;
+  margin-left: 90px;
+  width: 40px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
 
 html {
-    height: 100%;
-
+  height: 100%;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    height: 100%;
-    overflow-x: hidden;
-    width: 100%;
-    margin: 0;
-    background: linear-gradient(180deg, rgba(1, 3, 20, 1) 0%, rgba(89, 45, 209, 1) 100%) no-repeat;
-    /* background: linear-gradient(180deg, rgba(1,3,20,1) 0%, rgba(89,45,209,1) 50%, rgba(255,255,255,1) 100%);} */
+  font-family: "Arial", sans-serif;
+  height: 100%;
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(1, 3, 20, 1)),
+      to(rgba(89, 45, 209, 1))
+    )
+    no-repeat;
+  background: -o-linear-gradient(
+      top,
+      rgba(1, 3, 20, 1) 0%,
+      rgba(89, 45, 209, 1) 100%
+    )
+    no-repeat;
+  background: linear-gradient(
+      180deg,
+      rgba(1, 3, 20, 1) 0%,
+      rgba(89, 45, 209, 1) 100%
+    )
+    no-repeat;
+  /* background: linear-gradient(180deg, rgba(1,3,20,1) 0%, rgba(89,45,209,1) 50%, rgba(255,255,255,1) 100%);} */
 }
 
 @font-face {
-    font-family: NHG;
-    src: url(/fonts/nhg_text_65md.ttf);
+  font-family: NHG;
+  src: url(/fonts/nhg_text_65md.ttf);
 }
 
 .countdown {
-    display: flex;
-    justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .countdown-item {
-    font-size: 2em;
-    margin: 0 10px;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #333;
-    color: #fff;
+  font-size: 2em;
+  margin: 0 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
 }
 
 .event-description {
-    margin-top: 20px;
-    font-size: 1.5em;
-    color: #555;
+  margin-top: 20px;
+  font-size: 1.5em;
+  color: #555;
 }
 
 .c-item {
-    width: 100%;
-    font-size: 70px;
-    font-family: 'NHG', sans-serif;
-    color: white;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    text-align: center;
-
+  width: 100%;
+  font-size: 70px;
+  font-family: "NHG", sans-serif;
+  color: white;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .c-item-date {
-    width: 100%;
-    font-size: 18px;
-    font-family: 'NHG', sans-serif;
-    color: white;
-    top: 72%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    text-align: center;
+  width: 100%;
+  font-size: 18px;
+  font-family: "NHG", sans-serif;
+  color: white;
+  top: 72%;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .clock {
-    width: 500px;
-    height: 200px;
-    background: #dddddd24;
-    padding: 20px 30px;
-    border-radius: 20px;
-    backdrop-filter: blur(10px);
-    user-select: none;
-    left: 50%;
-    top: 50%;
-    position: relative;
-    transform: translate(-50%, -50%);
+  width: 500px;
+  height: 200px;
+  background: #dddddd24;
+  padding: 20px 30px;
+  border-radius: 20px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  left: 50%;
+  top: 50%;
+  position: relative;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 #format img {
-    width: 40px;
-    height: auto;
+  width: 40px;
+  height: auto;
 }
 
 .clock select {
-    width: 100px;
-    height: 30px;
-    outline: none;
-    background: transparent;
-    color: #fff;
-    overflow: hidden !important;
+  width: 100px;
+  height: 30px;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  overflow: hidden !important;
 }
 
 .select {
-    display: flex;
-
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .select h5 {
-    margin: 0px 10px;
-    transition: 0.2S ease-in-out;
-    padding: 5px 8px;
-    color: #fff;
+  margin: 0px 10px;
+  -webkit-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  padding: 5px 8px;
+  color: #fff;
 }
 
 .select h5:hover,
 .select h5:focus,
 .select h5.active {
-    cursor: pointer;
-    color: #000000;
-    background: #ffffff86;
+  cursor: pointer;
+  color: #000000;
+  background: #ffffff86;
 }
 
 @media only screen and (max-width: 768px) {
-
-    .clock {
-        width: 80%;
-        left: 50%;
-        position: relative;
-        transform: translate(-50%, -50%);
-        user-select: none;
-    }
+  .clock {
+    width: 80%;
+    left: 50%;
+    position: relative;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-
-    .clock {
-        width: 60%;
-        height: 300px;
-        left: 50%;
-        position: relative;
-        transform: translate(-50%, -50%);
-        user-select: none;
-    }
+  .clock {
+    width: 60%;
+    height: 300px;
+    left: 50%;
+    position: relative;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
 }
 
 #toggleNotificationBtn {
-    background: transparent;
-    border: none;
-    outline: none;
-    position: absolute;
-    right: 25px;
-    top: 25px;
+  background: transparent;
+  border: none;
+  outline: none;
+  position: absolute;
+  right: 25px;
+  top: 25px;
 }
 
 #toggleNotificationBtn .fa-bell {
-    color: rgb(89, 89, 89);
-    font-size: 35px;
-    animation: bell 2s infinite;
-    transition: 0.4s ease-in-out;
-    /* cursor: pointer; */
-
+  color: rgb(89, 89, 89);
+  font-size: 35px;
+  -webkit-animation: bell 2s infinite;
+  animation: bell 2s infinite;
+  -webkit-transition: 0.4s ease-in-out;
+  -o-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  /* cursor: pointer; */
 }
 
 #toggleNotificationBtn .fa-bell:hover {
-    color: rgb(169, 62, 62);
+  color: rgb(169, 62, 62);
 }
 
+@-webkit-keyframes bell {
+  100%,
+  0% {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+}
 
 @keyframes bell {
+  100%,
+  0% {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
 
-    100%,
-    0% {
-        transform: rotate(45deg);
-    }
-
-    50% {
-        transform: rotate(-45deg);
-    }
+  50% {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
 }
